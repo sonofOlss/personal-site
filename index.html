@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name – Bookshelf</title>
+  <title>Drew Olsson</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="site-title">
-      <span class="site-title-name">YOUR NAME</span>
-      <span class="site-title-tagline">/ thoughts, work, and books</span>
+    <div class="section-inner">
+      <div class="site-header-inner">
+        <div class="site-title-main">Drew Olsson</div>
+        <nav class="site-nav">
+          <a href="#about" class="nav-link">about</a>
+          <a href="#thoughts" class="nav-link">thoughts</a>
+          <a href="#bookshelf" class="nav-link">book shelf</a>
+        </nav>
+      </div>
     </div>
-    <nav class="site-nav">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#bookshelf" class="nav-link">Bookshelf</a>
-    </nav>
   </header>
 
   <main class="site-main">
@@ -23,7 +25,9 @@
     <section id="about" class="section section-about">
       <div class="section-inner">
         <p class="eyebrow">// NOW //</p>
-        <h1 class="about-heading">I help people think clearly about technology.</h1>
+        <h1 class="about-heading">
+          I help people think clearly about technology.
+        </h1>
 
         <div class="about-body">
           <p>
@@ -38,7 +42,7 @@
           <div class="about-meta">
             <h2>Current focus</h2>
             <ul>
-              <li>Designing human‑centered AI experiences.</li>
+              <li>Designing human-centered AI experiences.</li>
               <li>Building systems that make learning visible.</li>
               <li>Curating a bookshelf that doubles as a worldview.</li>
             </ul>
@@ -47,28 +51,16 @@
       </div>
     </section>
 
-    <!-- BOOKSHELF -->
-    <section id="bookshelf" class="section section-bookshelf">
+    <!-- THOUGHTS -->
+    <section id="thoughts" class="section section-thoughts">
       <div class="section-inner">
-        <header class="bookshelf-header">
-          <div>
-            <p class="eyebrow">BOOKSHELF</p>
-            <h2>Books that explain how I think.</h2>
-          </div>
-
-          <div class="bookshelf-controls">
-            <div class="filter-group" aria-label="Filter books">
-              <button class="filter-button is-active" data-filter="all">All</button>
-              <button class="filter-button" data-filter="life-changing">Life‑changing</button>
-              <button class="filter-button" data-filter="liked">Liked</button>
-            </div>
-            <span id="book-count" class="book-count"></span>
-          </div>
-        </header>
-
-        <div id="bookshelf-container" class="bookshelf-container">
-          <!-- Books are injected here by main.js -->
-        </div>
+        <p class="eyebrow">THOUGHTS</p>
+        <h2>Notes, experiments, and half-finished ideas.</h2>
+        <p>
+          I’ll use this space for occasional writing—sketches, questions I’m
+          working through, and things I want to remember. For now, it’s mostly
+          a placeholder for what’s coming next.
+        </p>
       </div>
     </section>
   </main>
@@ -78,12 +70,6 @@
       <p>Last updated <span id="last-updated">2025-01-01</span>.</p>
       <p>
         Built with plain HTML, CSS, and a sprinkle of JavaScript.
-        Edit <code>bookshelf-data.js</code> to add or update books.
       </p>
-    </div>
-  </footer>
+    </di
 
-  <script src="bookshelf-data.js"></script>
-  <script src="main.js"></script>
-</body>
-</html>
